@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac Orders</title>
+ <style> 
+    html {
+    background-color: #ff5733; 
+    }
+
+    h2{
+        background-color: red;
+        color: yellow;
+        padding: 15px;
+        width: fit-content;
+    }
+
+  body {
+    font-family: Arial;
+    background: #f2f2f2c8;
+    padding: 20px;
+    color: whitesmoke;
+
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+  }
+
+  button {
+    padding: 8px 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  #orderResult {
+    color: green;
+    margin-top: 10px;
+  }
+</style> 
+</head>
+<body>
+
+  <h2>McDonald's Order Selection Menu</h2>
+  <p>Select any 1 item</p>
+
+  <input type="radio" name="food" id="Meal" value="Meal"> Meal Combo
+  <img src="meal.jpg" width="100" height="100">
+  <br><br>
+
+  <input type="radio" name="food" id="Burger" value="Burger"> Burger + Fries
+  <img src="frbr.jpg" width="100" height="100">
+  <br><br>
+
+  <input type="radio" name="food" id="Fries" value="Fries"> Fries
+  <img src="frs.jpg" width="100" height="100">
+  <br><br>
+
+  <button type="button" onclick="placeOrder()">Order Now</button>
+
+  <h3 id="orderResult"></h3>
+
+  <script src="order.js"></script>
+
+</body>
+</html>
